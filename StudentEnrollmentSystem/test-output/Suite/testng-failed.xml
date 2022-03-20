@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.studentenrollmentsystem.listener.ExtendListener"/>
+  </listeners>
+  <test parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.studentenrollmentsystem.scripts.TestLoginClass">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="verifyInValidStudentLoginPassword"/>
+          <include name="verifyValidEmployeeLogin"/>
+          <include name="verifyValidStudentLogin"/>
+          <include name="verifyValidAdminLogin"/>
+          <include name="tearDown"/>
+          <include name="verifyInValidAdminLoginPassword"/>
+          <include name="onSetup"/>
+          <include name="verifyInValidAdminLogin"/>
+          <include name="verifyInValidEmployeeLoginPassword"/>
+        </methods>
+      </class> <!-- com.studentenrollmentsystem.scripts.TestLoginClass -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test parallel="tests" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.studentenrollmentsystem.scripts.TestAdminClass">
+        <methods>
+          <include name="empList"/>
+          <include name="verifyKnowMore"/>
+          <include name="empl_rej"/>
+          <include name="verifyValidAdminLogin"/>
+          <include name="tearDown"/>
+          <include name="empl_edit"/>
+          <include name="verifySearchByName"/>
+          <include name="onSetup"/>
+          <include name="quitDriver"/>
+          <include name="verifySearchByQualification"/>
+          <include name="verifyEditCourse"/>
+          <include name="LogOut"/>
+          <include name="validateAddCourse"/>
+          <include name="empl_app"/>
+          <include name="validateResetCourse"/>
+        </methods>
+      </class> <!-- com.studentenrollmentsystem.scripts.TestAdminClass -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

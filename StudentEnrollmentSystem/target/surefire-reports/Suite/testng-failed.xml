@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.studentenrollmentsystem.listener.ExtendListener"/>
+  </listeners>
+  <test parallel="tests" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.studentenrollmentsystem.scripts.TestAdminClass">
+        <methods>
+          <include name="onSetup"/>
+          <include name="quitDriver"/>
+          <include name="verifySearchByQualification"/>
+          <include name="empl_rej"/>
+          <include name="validateAddCourse"/>
+          <include name="tearDown"/>
+          <include name="empl_app"/>
+          <include name="verifySearchByName"/>
+          <include name="validateResetCourse"/>
+        </methods>
+      </class> <!-- com.studentenrollmentsystem.scripts.TestAdminClass -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

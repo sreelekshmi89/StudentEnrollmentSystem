@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.studentenrollmentsystem.scripts.TestAdminClass">
+        <methods>
+          <include name="empList"/>
+          <include name="verifyKnowMore"/>
+          <include name="empl_rej"/>
+          <include name="verifyValidAdminLogin"/>
+          <include name="tearDown"/>
+          <include name="empl_edit"/>
+          <include name="verifySearchByName"/>
+          <include name="onSetup"/>
+          <include name="quitDriver"/>
+          <include name="verifySearchByQualification"/>
+          <include name="verifyEditCourse"/>
+          <include name="LogOut"/>
+          <include name="validateAddCourse"/>
+          <include name="empl_app"/>
+          <include name="showStdDetail"/>
+          <include name="validateResetCourse"/>
+        </methods>
+      </class> <!-- com.studentenrollmentsystem.scripts.TestAdminClass -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

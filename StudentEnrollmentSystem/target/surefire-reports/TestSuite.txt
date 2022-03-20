@@ -1,0 +1,49 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 4, Errors: 0, Skipped: 4, Time elapsed: 151.933 s <<< FAILURE! - in TestSuite
+com.studentenrollmentsystem.scripts.TestAdminClass.validateResetCourse  Time elapsed: 1.95 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a _ngcontent-hwt-c26="" routerlink="/add-course" href="/add-course">...</a> is not clickable at point (1089, 33). Other element would receive the click: <a _ngcontent-hwt-c40="" data-toggle="collapse" data-target=".navbar-collapse" class="smoothScroll" style="cursor: pointer;">...</a>
+  (Session info: chrome=99.0.4844.51)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LHA7JAF', ip: '192.168.233.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\dhann\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ee6b937e7de1eb766ea2a2932ef3e8a
+	at com.studentenrollmentsystem.scripts.TestAdminClass.validateResetCourse(TestAdminClass.java:76)
+
+com.studentenrollmentsystem.scripts.TestAdminClass.validateAddCourse  Time elapsed: 91.41 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="cname"]"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LHA7JAF', ip: '192.168.233.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\dhann\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ee6b937e7de1eb766ea2a2932ef3e8a
+*** Element info: {Using=xpath, value=//*[@id="cname"]}
+	at com.studentenrollmentsystem.scripts.TestAdminClass.validateAddCourse(TestAdminClass.java:107)
+
+com.studentenrollmentsystem.scripts.TestAdminClass.empl_app  Time elapsed: 2.51 s  <<< FAILURE!
+org.openqa.selenium.NoAlertPresentException: 
+no such alert
+  (Session info: chrome=99.0.4844.51)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LHA7JAF', ip: '192.168.233.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\dhann\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ee6b937e7de1eb766ea2a2932ef3e8a
+	at com.studentenrollmentsystem.scripts.TestAdminClass.empl_app(TestAdminClass.java:262)
+
+com.studentenrollmentsystem.scripts.TestAdminClass.tearDown[[TestResult name=empl_app status=FAILURE method=TestAdminClass.empl_app()[pri:9, instance:com.studentenrollmentsystem.scripts.TestAdminClass@2e1ef60] output={null}]](0)  Time elapsed: 2.624 s  <<< FAILURE!
+org.openqa.selenium.UnhandledAlertException: 
+unexpected alert open: <unknown>
+  (Session info: chrome=99.0.4844.51): 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LHA7JAF', ip: '192.168.233.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\dhann\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ee6b937e7de1eb766ea2a2932ef3e8a
+
